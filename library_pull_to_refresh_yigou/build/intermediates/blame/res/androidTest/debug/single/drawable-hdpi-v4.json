@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "F:\\momo\\library_pull_to_refresh_yigou\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\indicator_arrow.png",
+        "source": "F:\\momo\\library_pull_to_refresh_yigou\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\indicator_arrow.png"
+    },
+    {
+        "merged": "F:\\momo\\library_pull_to_refresh_yigou\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\default_ptr_flip.png",
+        "source": "F:\\momo\\library_pull_to_refresh_yigou\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\default_ptr_flip.png"
+    },
+    {
+        "merged": "F:\\momo\\library_pull_to_refresh_yigou\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\default_ptr_rotate.png",
+        "source": "F:\\momo\\library_pull_to_refresh_yigou\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\default_ptr_rotate.png"
+    }
+]

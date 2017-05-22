@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">momo</string>
+
+    <string-array name="item_money">
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>其他金額</item>
+    </string-array>
+    <string name="guanzhu">关注</string>
+    <string name="remeng">热门</string>
+    <string name="zuixin">最新</string>
+</resources>

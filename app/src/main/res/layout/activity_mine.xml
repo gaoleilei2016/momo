@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/ed_open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dip"
+                    android:drawableTop="@drawable/ic_launcher"
+                    android:gravity="center"
+                    android:text="编辑" />
+
+                <TextView
+                    android:id="@+id/tv_mine_recharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dip"
+                    android:drawableTop="@drawable/ic_launcher"
+                    android:gravity="center"
+                    android:text="充值" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="48dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.gdswww.library.view.CircleImageView
+                        android:id="@+id/img_search_anchor_avatar"
+                        android:layout_width="120dip"
+                        android:layout_height="120dip"
+
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/zhubo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawableRight="@mipmap/nan"
+                        android:gravity="center"
+                        android:text="直播君"
+                        android:textSize="18sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/colorTheme"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:text="12"
+                            android:textColor="@color/colorTheme"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:text="2"
+                            android:textColor="@color/colorTheme"
+                            android:textSize="22sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="直播"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:text="关注"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:text="粉丝"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_mine_message"
+                style="@style/mine_rl"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorWhite"
+                >
+                <TextView
+                    style="@style/mine_tv"
+                    android:drawableLeft="@mipmap/ic_launcher"
+
+                    android:text="消息" />
+
+                <ImageView style="@style/mine_img_right" />
+
+            </RelativeLayout>
+
+            <View style="@style/View" />
+
+            <RelativeLayout
+                android:id="@+id/re_about_us"
+                android:background="@color/colorWhite"
+                style="@style/mine_rl">
+
+                <TextView
+                    style="@style/mine_tv"
+                    android:drawableLeft="@mipmap/ic_launcher"
+
+                    android:text="关于我们" />
+
+                <ImageView style="@style/mine_img_right" />
+
+            </RelativeLayout>
+
+            <View style="@style/View" />
+
+            <RelativeLayout style="@style/mine_rl"
+                android:background="@color/colorWhite"
+                >
+
+                <TextView
+                    style="@style/mine_tv"
+                    android:drawableLeft="@mipmap/ic_launcher"
+
+                    android:text="我的信箱" />
+
+                <ImageView style="@style/mine_img_right" />
+
+            </RelativeLayout>
+
+            <View style="@style/View" />
+
+            <RelativeLayout
+                android:background="@color/colorWhite"
+                android:id="@+id/rl_set_up"
+                style="@style/mine_rl">
+
+                <TextView
+                    style="@style/mine_tv"
+                    android:drawableLeft="@mipmap/ic_launcher"
+
+                    android:text="设置    " />
+
+                <ImageView style="@style/mine_img_right" />
+
+            </RelativeLayout>
+
+            <View style="@style/View" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

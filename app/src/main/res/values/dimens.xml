@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="cut_line_height">0.5dp</dimen>
+    <dimen name="fornt14">14sp</dimen>
+    <dimen name="ten">10dp</dimen>
+    <dimen name="navigator_margin_top">5dp</dimen>
+    <dimen name="common_navigator_height">45dp</dimen>
+</resources>
+

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <RelativeLayout
+        android:id="@+id/headview"
+        style="@style/mine_rl"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            style="@style/mine_tv"
+            android:text="头像" />
+
+        <com.gdswww.library.view.CircleImageView
+            android:id="@+id/head_img"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@color/gray" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dip"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/nick_name"
+            style="@style/mine_rl">
+
+            <TextView
+                android:id="@+id/left_nick"
+                style="@style/mine_tv"
+                android:text="昵称" />
+
+            <TextView
+                android:id="@+id/tv_nick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/left_nick"
+                android:gravity="center"
+                android:text="昵称" />
+
+            <ImageView style="@style/mine_img_right" />
+        </RelativeLayout>
+
+        <View style="@style/MarginView" />
+
+        <RelativeLayout
+            android:id="@+id/sex"
+            style="@style/mine_rl">
+
+            <TextView
+                android:id="@+id/tv_sex"
+                style="@style/mine_tv"
+                android:text="性别" />
+
+            <TextView
+                android:id="@+id/tv_tv_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/tv_sex"
+                android:gravity="center"
+                android:text="男" />
+
+            <ImageView style="@style/mine_img_right" />
+        </RelativeLayout>
+
+        <View
+
+            style="@style/MarginView" />
+
+        <RelativeLayout
+            android:id="@+id/address"
+            style="@style/mine_rl">
+
+            <TextView
+                android:id="@+id/tv_address"
+                style="@style/mine_tv"
+                android:text="地区" />
+
+            <TextView
+                android:id="@+id/tv_tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/tv_address"
+                android:gravity="center"
+                android:text="北京" />
+
+            <ImageView style="@style/mine_img_right" />
+        </RelativeLayout>
+
+        <View
+
+            style="@style/MarginView" />
+    </LinearLayout>
+</LinearLayout>

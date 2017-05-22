@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip">
+
+            <TextView
+                style="@style/mine_tv"
+                android:text="推送提醒" />
+            <CheckBox
+                android:id="@+id/cb_mine"
+                style="@style/mine_cb"
+         />
+        </RelativeLayout>
+
+        <View style="@style/MarginView" />
+
+        <RelativeLayout
+            android:id="@+id/rl_mine_feedback"
+            style="@style/mine_rl">
+
+            <TextView
+                style="@style/mine_tv"
+                android:text="意见反馈" />
+
+            <ImageView style="@style/mine_img_right" />
+
+        </RelativeLayout>
+
+        <View style="@style/MarginView" />
+
+        <RelativeLayout
+            android:id="@+id/rl_mine_user_agreement"
+            style="@style/mine_rl">
+
+            <TextView
+                style="@style/mine_tv"
+                android:text="用户协议" />
+
+            <ImageView style="@style/mine_img_right" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_exit_login"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:layout_marginTop="45dip"
+        android:background="@drawable/pink_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="退出登录"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp" />
+</LinearLayout>

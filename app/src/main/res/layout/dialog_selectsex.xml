@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/ten"
+        android:text="选择性别"
+        android:textColor="@color/text_color" />
+
+    <View style="@style/cut_line" />
+
+    <TextView
+        android:id="@+id/tv_dialog_man"
+        style="@style/textview_wrap_content_fort14_black"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:padding="@dimen/ten"
+        android:text="男" />
+
+    <View style="@style/cut_line" />
+
+    <TextView
+        android:id="@+id/tv_dialog_woman"
+        style="@style/textview_wrap_content_fort14_black"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:padding="@dimen/ten"
+        android:text="女" />
+
+</LinearLayout>

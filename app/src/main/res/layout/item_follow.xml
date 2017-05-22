@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:background="@drawable/touch_bg">
+
+        <ImageView
+            android:id="@+id/img_attention_avatar"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:layout_marginTop="15dip"
+            android:layout_toLeftOf="@+id/tv_whether_concern"
+            android:layout_toRightOf="@+id/img_attention_avatar"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="直播君" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="个性签名男男女女" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_whether_concern"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/gray1_shape"
+            android:text="已关注"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+             />
+    </RelativeLayout>
+</LinearLayout>

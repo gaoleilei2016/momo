@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main$Generated" generated="true"><source path="F:\momo\library_appframe_base\src\main\res"/><source path="F:\momo\library_appframe_base\build\generated\res\rs\release"/><source path="F:\momo\library_appframe_base\build\generated\res\resValues\release"/></dataSet><dataSet config="release$Generated" generated="true"><source path="F:\momo\library_appframe_base\src\release\res"/></dataSet><dataSet config="main" generated-set="main$Generated"><source path="F:\momo\library_appframe_base\src\main\res"><file name="vpi__dark_theme" path="F:\momo\library_appframe_base\src\main\res\color\vpi__dark_theme.xml" qualifiers="" type="color"/><file name="vpi__light_theme" path="F:\momo\library_appframe_base\src\main\res\color\vpi__light_theme.xml" qualifiers="" type="color"/><file name="btn_finish_selector" path="F:\momo\library_appframe_base\src\main\res\drawable\btn_finish_selector.xml" qualifiers="" type="drawable"/><file name="list_item_folder_bg" path="F:\momo\library_appframe_base\src\main\res\drawable\list_item_folder_bg.xml" qualifiers="" type="drawable"/><file name="pic_choose_selector" path="F:\momo\library_appframe_base\src\main\res\drawable\pic_choose_selector.xml" qualifiers="" type="drawable"/><file name="progressbar" path="F:\momo\library_appframe_base\src\main\res\drawable\progressbar.xml" qualifiers="" type="drawable"/><file name="progress_dialog_bg" path="F:\momo\library_appframe_base\src\main\res\drawable\progress_dialog_bg.xml" qualifiers="" type="drawable"/><file name="shadow_bottom" path="F:\momo\library_appframe_base\src\main\res\drawable\shadow_bottom.png" qualifiers="" type="drawable"/><file name="shadow_left" path="F:\momo\library_appframe_base\src\main\res\drawable\shadow_left.png" qualifiers="" type="drawable"/><file name="shadow_right" path="F:\momo\library_appframe_base\src\main\res\drawable\shadow_right.png" qualifiers="" type="drawable"/><file name="vpi__tab_indicator" path="F:\momo\library_appframe_base\src\main\res\drawable\vpi__tab_indicator.xml" qualifiers="" type="drawable"/><file name="white_bg_shape" path="F:\momo\library_appframe_base\src\main\res\drawable\white_bg_shape.xml" qualifiers="" type="drawable"/><file name="choosebar_press_down" path="F:\momo\library_appframe_base\src\main\res\drawable-hdpi\choosebar_press_down.9.png" qualifiers="hdpi-v4" type="drawable"/><file name="choosebar_press_up" path="F:\momo\library_appframe_base\src\main\res\drawable-hdpi\choosebar_press_up.9.png" qualifiers="hdpi-v4" type="drawable"/><file name="dot_normal" path="F:\momo\library_appframe_base\src\main\res\drawable-hdpi\dot_normal.png" qualifiers="hdpi-v4" type="drawable"/><file name="dot_selected" path="F:\momo\library_appframe_base\src\main\res\drawable-hdpi\dot_selected.png" qualifiers="hdpi-v4" type="drawable"/><file name="icon_addpic_focused" path="F:\momo\library_appframe_base\src\main\res\drawable-hdpi\icon_addpic_focused.png" qualifiers="hdpi-v4" type="drawable"/><file name="icon_back" path="F:\momo\library_appframe_base\src\main\res\drawable-hdpi\icon_back.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_launcher" path="F:\momo\library_appframe_base\src\main\res\drawable-hdpi\ic_launcher.png" qualifiers="hdpi-v4" type="drawable"/><file name="refresh_btn_normal" path="F:\momo\library_appframe_base\src\main\res\drawable-hdpi\refresh_btn_normal.png" qualifiers="hdpi-v4" type="drawable"/><file name="vpi__tab_selected_focused_holo" path="F:\momo\library_appframe_base\src\main\res\drawable-hdpi\vpi__tab_selected_focused_holo.9.png" qualifiers="hdpi-v4" type="drawable"/><file name="vpi__tab_selected_holo" path="F:\momo\library_appframe_base\src\main\res\drawable-hdpi\vpi__tab_selected_holo.9.png" qualifiers="hdpi-v4" type="drawable"/><file name="vpi__tab_selected_pressed_holo" path="F:\momo\library_appframe_base\src\main\res\drawable-hdpi\vpi__tab_selected_pressed_holo.9.png" qualifiers="hdpi-v4" type="drawable"/><file name="vpi__tab_unselected_focused_holo" path="F:\momo\library_appframe_base\src\main\res\drawable-hdpi\vpi__tab_unselected_focused_holo.9.png" qualifiers="hdpi-v4" type="drawable"/><file name="vpi__tab_unselected_holo" path="F:\momo\library_appframe_base\src\main\res\drawable-hdpi\vpi__tab_unselected_holo.9.png" qualifiers="hdpi-v4" type="drawable"/><file name="vpi__tab_unselected_pressed_holo" path="F:\momo\library_appframe_base\src\main\res\drawable-hdpi\vpi__tab_unselected_pressed_holo.9.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_launcher" path="F:\momo\library_appframe_base\src\main\res\drawable-mdpi\ic_launcher.png" qualifiers="mdpi-v4" type="drawable"/><file name="album_add" path="F:\momo\library_appframe_base\src\main\res\drawable-xhdpi\album_add.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btn_style_nine_normal" path="F:\momo\library_appframe_base\src\main\res\drawable-xhdpi\btn_style_nine_normal.9.png" qualifiers="xhdpi-v4" type="drawable"/><file name="btn_style_nine_pressed" path="F:\momo\library_appframe_base\src\main\res\drawable-xhdpi\btn_style_nine_pressed.9.png" qualifiers="xhdpi-v4" type="drawable"/><file name="loading_img" path="F:\momo\library_appframe_base\src\main\res\drawable-xhdpi\loading_img.9.png" qualifiers="xhdpi-v4" type="drawable"/><file name="mmtitle_bg" path="F:\momo\library_appframe_base\src\main\res\drawable-xhdpi\mmtitle_bg.9.png" qualifiers="xhdpi-v4" type="drawable"/><file name="publicloading" path="F:\momo\library_appframe_base\src\main\res\drawable-xhdpi\publicloading.png" qualifiers="xhdpi-v4" type="drawable"/><file name="webviewtab_bg" path="F:\momo\library_appframe_base\src\main\res\drawable-xhdpi\webviewtab_bg.9.png" qualifiers="xhdpi-v4" type="drawable"/><file name="activity_album" path="F:\momo\library_appframe_base\src\main\res\layout\activity_album.xml" qualifiers="" type="layout"/><file name="activity_main" path="F:\momo\library_appframe_base\src\main\res\layout\activity_main.xml" qualifiers="" type="layout"/><file name="activity_select_photo" path="F:\momo\library_appframe_base\src\main\res\layout\activity_select_photo.xml" qualifiers="" type="layout"/><file name="activity_show_asset_image" path="F:\momo\library_appframe_base\src\main\res\layout\activity_show_asset_image.xml" qualifiers="" type="layout"/><file name="activity_show_single_image" path="F:\momo\library_appframe_base\src\main\res\layout\activity_show_single_image.xml" qualifiers="" type="layout"/><file name="activity_show_single_image_with_delete" path="F:\momo\library_appframe_base\src\main\res\layout\activity_show_single_image_with_delete.xml" qualifiers="" type="layout"/><file name="alert_pic_sel_dialog" path="F:\momo\library_appframe_base\src\main\res\layout\alert_pic_sel_dialog.xml" qualifiers="" type="layout"/><file name="app_progress_dialog" path="F:\momo\library_appframe_base\src\main\res\layout\app_progress_dialog.xml" qualifiers="" type="layout"/><file name="choose_imageview" path="F:\momo\library_appframe_base\src\main\res\layout\choose_imageview.xml" qualifiers="" type="layout"/><file name="layout_image_loading" path="F:\momo\library_appframe_base\src\main\res\layout\layout_image_loading.xml" qualifiers="" type="layout"/><file name="list_forder" path="F:\momo\library_appframe_base\src\main\res\layout\list_forder.xml" qualifiers="" type="layout"/><file name="list_item_forder" path="F:\momo\library_appframe_base\src\main\res\layout\list_item_forder.xml" qualifiers="" type="layout"/><file name="select_imageview" path="F:\momo\library_appframe_base\src\main\res\layout\select_imageview.xml" qualifiers="" type="layout"/><file name="show_imageview" path="F:\momo\library_appframe_base\src\main\res\layout\show_imageview.xml" qualifiers="" type="layout"/><file name="slidingmenumain" path="F:\momo\library_appframe_base\src\main\res\layout\slidingmenumain.xml" qualifiers="" type="layout"/><file name="splash_layout" path="F:\momo\library_appframe_base\src\main\res\layout\splash_layout.xml" qualifiers="" type="layout"/><file name="swipeback_layout" path="F:\momo\library_appframe_base\src\main\res\layout\swipeback_layout.xml" qualifiers="" type="layout"/><file name="view_pager_adapter" path="F:\momo\library_appframe_base\src\main\res\layout\view_pager_adapter.xml" qualifiers="" type="layout"/><file path="F:\momo\library_appframe_base\src\main\res\values\attr.xml" qualifiers=""><declare-styleable name="SwipeBackLayout">
+        <attr format="dimension" name="edge_size"/>
+        <attr name="edge_flag">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+            <enum name="bottom" value="2"/>
+            <enum name="all" value="3"/>
+        </attr>
+        <attr format="reference" name="shadow_left"/>
+        <attr format="reference" name="shadow_right"/>
+        <attr format="reference" name="shadow_bottom"/>
+    </declare-styleable><declare-styleable name="SlidingMenu">
+        <attr name="mode">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+        <attr format="reference" name="viewAbove"/>
+        <attr format="reference" name="viewBehind"/>
+        <attr format="dimension" name="behindOffset"/>
+        <attr format="dimension" name="behindWidth"/>
+        <attr format="float" name="behindScrollScale"/>
+        <attr name="touchModeAbove">
+            <enum name="margin" value="0"/>
+            <enum name="fullscreen" value="1"/>
+            <enum name="none" value="2"/>
+        </attr>
+        <attr name="touchModeBehind">
+            <enum name="margin" value="0"/>
+            <enum name="fullscreen" value="1"/>
+            <enum name="none" value="2"/>
+        </attr>
+        <attr format="reference" name="shadowDrawable"/>
+        <attr format="dimension" name="shadowWidth"/>
+        <attr format="boolean" name="fadeEnabled"/>
+        <attr format="float" name="fadeDegree"/>
+        <attr format="boolean" name="selectorEnabled"/>
+        <attr format="reference" name="selectorDrawable"/>
+    </declare-styleable><attr format="reference" name="SwipeBackLayoutStyle"/><declare-styleable name="CircleImageView">
+        <attr format="dimension" name="border_width"/>
+        <attr format="color" name="border_color"/>
+    </declare-styleable><declare-styleable name="MyViewPager">
+        <attr format="reference" name="dot_normal"/>
+        <attr format="reference" name="dot_selected"/>
+        <attr format="boolean" name="isAutoScroll"/>
+        <attr format="integer" name="shudu">
+            <flag name="fast" value="5000"/>
+            <flag name="normal" value="7000"/>
+            <flag name="slow" value="10000"/>
+        </attr>
+        <attr format="integer" name="dir">
+            <flag name="left" value="-1"/>
+            <flag name="center" value="0"/>
+            <flag name="right" value="1"/>
+        </attr>
+    </declare-styleable><declare-styleable name="RoundAngleImageView">
+        <attr format="dimension" name="roundWidth"/>
+        <attr format="dimension" name="roundHeight"/>
+    </declare-styleable></file><file path="F:\momo\library_appframe_base\src\main\res\values\colors.xml" qualifiers=""><color name="lightsalmon">#FFA07A</color><color name="darkcyan">#008B8B</color><color name="olivedrab">#6B8E23</color><color name="lightcyan">#E0FFFF</color><color name="maroon">#800000</color><color name="mediumspringgreen">#00FA9A</color><color name="royalblue">#4169E1</color><color name="darkmagenta">#8B008B</color><color name="darkgreen">#006400</color><color name="line">#C6C6C6</color><color name="mintcream">#F5FFFA</color><color name="seagreen">#2E8B57</color><color name="peru">#CD853F</color><color name="slategrey">#708090</color><color name="floralwhite">#FFFAF0</color><color name="dimgray">#696969</color><color name="project_red">#ff4a4a</color><color name="beige">#F5F5DC</color><color name="orchid">#DA70D6</color><color name="lavenderblush">#FFF0F5</color><color name="bisque">#FFE4C4</color><color name="tv_green">#14CA47</color><color name="goldenrod">#DAA520</color><color name="palegreen">#98FB98</color><color name="mediumturquoise">#48D1CC</color><color name="white_press">#d1d1d1</color><color name="green">#008000</color><color name="darkslategray">#2F4F4F</color><color name="lime">#00FF00</color><color name="chocolate">#D2691E</color><color name="darkslateblue">#483D8B</color><color name="oldlace">#FDF5E6</color><color name="ghostwhite">#F8F8FF</color><color name="purple">#800080</color><color name="darkblue">#00008B</color><color name="burlywood">#DEB887</color><color name="white">#FFFFFF</color><color name="grey">#808080</color><color name="palevioletred">#DB7093</color><color name="lightgray">#D3D3D3</color><color name="mediumvioletred">#C71585</color><color name="steelblue">#4682B4</color><color name="darkkhaki">#BDB76B</color><color name="rosybrown">#BC8F8F</color><color name="dodgerblue">#1E90FF</color><color name="lightslategrey">#778899</color><color name="midnightblue">#191970</color><color name="salmon">#FA8072</color><color name="peachpuff">#FFDAB9</color><color name="red_FD563A">#FD563A</color><color name="lightblue">#ADD8E6</color><color name="line_EBEBF1">#EBEBF1</color><color name="black">#000000</color><color name="crimson">#DC143C</color><color name="none_color">#00000000</color><color name="darkorange">#FF8C00</color><color name="gainsboro">#DCDCDC</color><color name="saddlebrown">#8B4513</color><color name="cadetblue">#5F9EA0</color><color name="project_blue">#36aadd</color><color name="tomato">#FF6347</color><color name="darkolivegreen">#556B2F</color><color name="qianhuise">#9e9e9e</color><color name="aquamarine">#7FFFD4</color><color name="darkred">#8B0000</color><color name="lightpink">#FFB6C1</color><color name="indianred">#CD5C5C</color><color name="mediumaquamarine">#66CDAA</color><color name="forestgreen">#228B22</color><color name="ptrHeaderBackground">#ffe6e6e6</color><color name="mediumpurple">#9370DB</color><color name="wheat">#F5DEB3</color><color name="cornflowerblue">#6495ED</color><color name="darksalmon">#E9967A</color><color name="mediumorchid">#BA55D3</color><color name="cyan">#00FFFF</color><color name="thistle">#D8BFD8</color><color name="ivory">#FFFFF0</color><color name="silver">#C0C0C0</color><color name="cornsilk">#FFF8DC</color><color name="slategray">#708090</color><color name="lightgoldenrodyellow">#FAFAD2</color><color name="aliceblue">#F0F8FF</color><color name="limegreen">#32CD32</color><color name="powderblue">#B0E0E6</color><color name="indigo">#4B0082</color><color name="lightsteelblue">#B0C4DE</color><color name="slateblue">#6A5ACD</color><color name="darkgoldenrod">#B8860B</color><color name="springgreen">#00FF7F</color><color name="lightyellow">#FFFFE0</color><color name="seashell">#FFF5EE</color><color name="blueviolet">#8A2BE2</color><color name="alpha_black">#a0000000</color><color name="orangered">#FF4500</color><color name="snow">#FFFAFA</color><color name="brown">#A52A2A</color><color name="whitesmoke">#F5F5F5</color><color name="honeydew">#F0FFF0</color><color name="dimgrey">#696969</color><color name="pink">#FFC0CB</color><color name="firebrick">#B22222</color><color name="lightseagreen">#20B2AA</color><color name="project_yellow">#ffc103</color><color name="antiquewhite">#FAEBD7</color><color name="black_overlay">#66000000</color><color name="qianhuibaise">#eeeeee</color><color name="ptrHeaderTextColor">#ff787878</color><color name="deepskyblue">#00BFFF</color><color name="coral">#FF7F50</color><color name="tran_black">#b0000000</color><color name="blueviolet2">#a0bd00ff</color><color name="teal">#008080</color><color name="red_EA5657">#EA5657</color><color name="blue">#0000FF</color><color name="readed">#b9b8b8</color><color name="orange">#FFA500</color><color name="gold">#FFD700</color><color name="darkslategrey">#2F4F4F</color><color name="lawngreen">#7CFC00</color><color name="sandybrown">#F4A460</color><color name="gray">#808080</color><color name="moccasin">#FFE4B5</color><color name="lavender">#E6E6FA</color><color name="mediumslateblue">#7B68EE</color><color name="magenta">#FF00FF</color><color name="lightgrey">#D3D3D3</color><color name="darkgray">#A9A9A9</color><color name="darkorchid">#9932CC</color><color name="hotpink">#FF69B4</color><color name="lightcoral">#F08080</color><color name="blueviolet2_seleted">#e0bd00ff</color><color name="violet">#EE82EE</color><color name="palegoldenrod">#EEE8AA</color><color name="khaki">#F0E68C</color><color name="greenyellow">#ADFF2F</color><color name="darkturquoise">#00CED1</color><color name="papayawhip">#FFEFD5</color><color name="navy">#000080</color><color name="darkviolet">#9400D3</color><color name="lightskyblue">#87CEFA</color><color name="aqua">#00FFFF</color><color name="lightslategray">#778899</color><color name="sienna">#A0522D</color><color name="mistyrose">#FFE4E1</color><color name="bule_overlay">#660D92DD</color><color name="lightgreen">#90EE90</color><color name="soft_huise">#CCCCCC</color><color name="red">#FF0000</color><color name="blanchedalmond">#FFEBCD</color><color name="navajowhite">#FFDEAD</color><color name="linen">#FAF0E6</color><color name="yellow">#FFFF00</color><color name="tan">#D2B48C</color><color name="fuchsia">#FF00FF</color><color name="paleturquoise">#AFEEEE</color><color name="azure">#F0FFFF</color><color name="plum">#DDA0DD</color><color name="darkseagreen">#8FBC8F</color><color name="mediumblue">#0000CD</color><color name="deeppink">#FF1493</color><color name="turquoise">#40E0D0</color><color name="mediumseagreen">#3CB371</color><color name="lemonchiffon">#FFFACD</color><color name="chartreuse">#7FFF00</color><color name="olive">#808000</color><color name="skyblue">#87CEEB</color></file><file path="F:\momo\library_appframe_base\src\main\res\values\dimens.xml" qualifiers=""><dimen name="shadow_width">5dp</dimen></file><file path="F:\momo\library_appframe_base\src\main\res\values\ids.xml" qualifiers=""><item name="selected_view" type="id"/></file><file path="F:\momo\library_appframe_base\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">library_frame_base</string></file><file path="F:\momo\library_appframe_base\src\main\res\values\styles.xml" qualifiers=""><style name="my_dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style><style name="SwipeBackLayout">
+        <item name="edge_size">50dip</item>
+        <item name="shadow_left">@drawable/shadow_left</item>
+        <item name="shadow_right">@drawable/shadow_right</item>
+        <item name="shadow_bottom">@drawable/shadow_bottom</item>
+    </style></file><file path="F:\momo\library_appframe_base\src\main\res\values\vpi__attrs.xml" qualifiers=""><attr format="dimension" name="strokeWidth"/><declare-styleable name="ViewPagerIndicator">
+        
+        <attr format="reference" name="vpiCirclePageIndicatorStyle"/>
+        
+        <attr format="reference" name="vpiIconPageIndicatorStyle"/>
+        
+        <attr format="reference" name="vpiLinePageIndicatorStyle"/>
+        
+        <attr format="reference" name="vpiTitlePageIndicatorStyle"/>
+        
+        <attr format="reference" name="vpiTabPageIndicatorStyle"/>
+        
+        <attr format="reference" name="vpiUnderlinePageIndicatorStyle"/>
+    </declare-styleable><attr format="color" name="unselectedColor"/><declare-styleable name="CirclePageIndicator">
+        
+        <attr name="centered"/>
+        
+        <attr format="color" name="fillColor"/>
+        
+        <attr format="color" name="pageColor"/>
+        
+        <attr name="android:orientation"/>
+        
+        <attr format="dimension" name="radius"/>
+        
+        <attr format="boolean" name="snap"/>
+        
+        <attr format="color" name="strokeColor"/>
+        
+        <attr name="strokeWidth"/>
+        
+        <attr name="android:background"/>
+    </declare-styleable><attr format="color" name="selectedColor"/><attr format="boolean" name="centered"/><declare-styleable name="LinePageIndicator">
+        
+        <attr name="centered"/>
+        
+        <attr name="unselectedColor"/>
+        
+        <attr name="selectedColor"/>
+        
+        <attr format="dimension" name="lineWidth"/>
+        
+        <attr name="strokeWidth"/>
+        
+        <attr format="dimension" name="gapWidth"/>
+        
+        <attr name="android:background"/>
+    </declare-styleable><declare-styleable name="UnderlinePageIndicator">
+        
+        <attr format="boolean" name="fades"/>
+        
+        <attr format="integer" name="fadeDelay"/>
+        
+        <attr format="integer" name="fadeLength"/>
+        
+        <attr name="selectedColor"/>
+        
+        <attr name="android:background"/>
+    </declare-styleable><declare-styleable name="TitlePageIndicator">
+        
+        <attr format="dimension" name="clipPadding"/>
+        
+        <attr format="color" name="footerColor"/>
+        
+        <attr format="dimension" name="footerLineHeight"/>
+        
+        <attr name="footerIndicatorStyle">
+            <enum name="none" value="0"/>
+            <enum name="triangle" value="1"/>
+            <enum name="underline" value="2"/>
+        </attr>
+        
+        <attr format="dimension" name="footerIndicatorHeight"/>
+        
+        <attr format="dimension" name="footerIndicatorUnderlinePadding"/>
+        
+        <attr format="dimension" name="footerPadding"/>
+        
+        <attr name="linePosition">
+            <enum name="bottom" value="0"/>
+            <enum name="top" value="1"/>
+        </attr>
+        
+        <attr name="selectedColor"/>
+        
+        <attr format="boolean" name="selectedBold"/>
+        
+        <attr name="android:textColor"/>
+        
+        <attr name="android:textSize"/>
+        
+        <attr format="dimension" name="titlePadding"/>
+        
+        <attr format="dimension" name="topPadding"/>
+        
+        <attr name="android:background"/>
+    </declare-styleable></file><file path="F:\momo\library_appframe_base\src\main\res\values\vpi__colors.xml" qualifiers=""><color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color><color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color><color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color><color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color><color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color><color name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</color><color name="vpi__background_holo_dark">#ff000000</color><color name="vpi__background_holo_light">#fff3f3f3</color></file><file path="F:\momo\library_appframe_base\src\main\res\values\vpi__defaults.xml" qualifiers=""><dimen name="default_title_indicator_title_padding">5dp</dimen><dimen name="default_circle_indicator_stroke_width">1dp</dimen><dimen name="default_title_indicator_footer_indicator_height">4dp</dimen><bool name="default_circle_indicator_centered">true</bool><color name="default_circle_indicator_page_color">#00000000</color><dimen name="default_title_indicator_footer_indicator_underline_padding">20dp</dimen><dimen name="default_circle_indicator_radius">3dp</dimen><integer name="default_underline_indicator_fade_length">400</integer><integer name="default_circle_indicator_orientation">0</integer><integer name="default_underline_indicator_fade_delay">300</integer><integer name="default_title_indicator_footer_indicator_style">2</integer><color name="default_underline_indicator_selected_color">#FF33B5E5</color><dimen name="default_line_indicator_gap_width">4dp</dimen><color name="default_line_indicator_selected_color">#FF33B5E5</color><bool name="default_circle_indicator_snap">false</bool><color name="default_line_indicator_unselected_color">#FFBBBBBB</color><color name="default_title_indicator_selected_color">#FFFFFFFF</color><dimen name="default_line_indicator_line_width">12dp</dimen><dimen name="default_title_indicator_clip_padding">4dp</dimen><dimen name="default_title_indicator_footer_line_height">2dp</dimen><integer name="default_title_indicator_line_position">0</integer><dimen name="default_title_indicator_text_size">15dp</dimen><dimen name="default_title_indicator_footer_padding">7dp</dimen><color name="default_title_indicator_text_color">#BBFFFFFF</color><bool name="default_title_indicator_selected_bold">true</bool><dimen name="default_line_indicator_stroke_width">1dp</dimen><dimen name="default_title_indicator_top_padding">7dp</dimen><color name="default_circle_indicator_stroke_color">#FFDDDDDD</color><color name="default_title_indicator_footer_color">#FF33B5E5</color><bool name="default_line_indicator_centered">true</bool><color name="default_circle_indicator_fill_color">#FFFFFFFF</color><bool name="default_underline_indicator_fades">true</bool></file><file path="F:\momo\library_appframe_base\src\main\res\values\vpi__styles.xml" qualifiers=""><style name="Widget.TabPageIndicator" parent="Widget">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/vpi__tab_indicator</item>
+        <item name="android:paddingLeft">22dip</item>
+        <item name="android:paddingRight">22dip</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.TabPageIndicator</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:maxLines">1</item>
+    </style><style name="Widget">
+    </style><style name="Theme.PageIndicatorDefaults" parent="android:Theme">
+        <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
+    </style><style name="TextAppearance.TabPageIndicator" parent="Widget">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/vpi__dark_theme</item>
+    </style><style name="Widget.IconPageIndicator" parent="Widget">
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+    </style></file></source><source path="F:\momo\library_appframe_base\build\generated\res\rs\release"/><source path="F:\momo\library_appframe_base\build\generated\res\resValues\release"/></dataSet><dataSet config="release" generated-set="release$Generated"><source path="F:\momo\library_appframe_base\src\release\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="CircleImageView"><attr format="dimension" name="border_width"/><attr format="color" name="border_color"/></declare-styleable><declare-styleable name="SlidingMenu"><attr name="mode">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr><attr format="reference" name="viewAbove"/><attr format="reference" name="viewBehind"/><attr format="dimension" name="behindOffset"/><attr format="dimension" name="behindWidth"/><attr format="float" name="behindScrollScale"/><attr name="touchModeAbove">
+            <enum name="margin" value="0"/>
+            <enum name="fullscreen" value="1"/>
+            <enum name="none" value="2"/>
+        </attr><attr name="touchModeBehind">
+            <enum name="margin" value="0"/>
+            <enum name="fullscreen" value="1"/>
+            <enum name="none" value="2"/>
+        </attr><attr format="reference" name="shadowDrawable"/><attr format="dimension" name="shadowWidth"/><attr format="boolean" name="fadeEnabled"/><attr format="float" name="fadeDegree"/><attr format="boolean" name="selectorEnabled"/><attr format="reference" name="selectorDrawable"/></declare-styleable><declare-styleable name="MyViewPager"><attr format="reference" name="dot_normal"/><attr format="reference" name="dot_selected"/><attr format="boolean" name="isAutoScroll"/><attr format="integer" name="shudu">
+            <flag name="fast" value="5000"/>
+            <flag name="normal" value="7000"/>
+            <flag name="slow" value="10000"/>
+        </attr><attr format="integer" name="dir">
+            <flag name="left" value="-1"/>
+            <flag name="center" value="0"/>
+            <flag name="right" value="1"/>
+        </attr></declare-styleable><declare-styleable name="SwipeBackLayout"><attr format="dimension" name="edge_size"/><attr name="edge_flag">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+            <enum name="bottom" value="2"/>
+            <enum name="all" value="3"/>
+        </attr><attr format="reference" name="shadow_left"/><attr format="reference" name="shadow_right"/><attr format="reference" name="shadow_bottom"/></declare-styleable><declare-styleable name="ViewPagerIndicator"><attr format="reference" name="vpiCirclePageIndicatorStyle"/><attr format="reference" name="vpiIconPageIndicatorStyle"/><attr format="reference" name="vpiLinePageIndicatorStyle"/><attr format="reference" name="vpiTitlePageIndicatorStyle"/><attr format="reference" name="vpiTabPageIndicatorStyle"/><attr format="reference" name="vpiUnderlinePageIndicatorStyle"/></declare-styleable><declare-styleable name="LinePageIndicator"><attr name="centered"/><attr name="unselectedColor"/><attr name="selectedColor"/><attr format="dimension" name="lineWidth"/><attr name="strokeWidth"/><attr format="dimension" name="gapWidth"/><attr name="android:background"/></declare-styleable><declare-styleable name="UnderlinePageIndicator"><attr format="boolean" name="fades"/><attr format="integer" name="fadeDelay"/><attr format="integer" name="fadeLength"/><attr name="selectedColor"/><attr name="android:background"/></declare-styleable><declare-styleable name="RoundAngleImageView"><attr format="dimension" name="roundWidth"/><attr format="dimension" name="roundHeight"/></declare-styleable><declare-styleable name="TitlePageIndicator"><attr format="dimension" name="clipPadding"/><attr format="color" name="footerColor"/><attr format="dimension" name="footerLineHeight"/><attr name="footerIndicatorStyle">
+            <enum name="none" value="0"/>
+            <enum name="triangle" value="1"/>
+            <enum name="underline" value="2"/>
+        </attr><attr format="dimension" name="footerIndicatorHeight"/><attr format="dimension" name="footerIndicatorUnderlinePadding"/><attr format="dimension" name="footerPadding"/><attr name="linePosition">
+            <enum name="bottom" value="0"/>
+            <enum name="top" value="1"/>
+        </attr><attr name="selectedColor"/><attr format="boolean" name="selectedBold"/><attr name="android:textColor"/><attr name="android:textSize"/><attr format="dimension" name="titlePadding"/><attr format="dimension" name="topPadding"/><attr name="android:background"/></declare-styleable><declare-styleable name="CirclePageIndicator"><attr name="centered"/><attr format="color" name="fillColor"/><attr format="color" name="pageColor"/><attr name="android:orientation"/><attr format="dimension" name="radius"/><attr format="boolean" name="snap"/><attr format="color" name="strokeColor"/><attr name="strokeWidth"/><attr name="android:background"/></declare-styleable></configuration></mergedItems></merger>

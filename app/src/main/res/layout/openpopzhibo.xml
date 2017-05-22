@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:id="@+id/closeDialog"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="30dp"
+            android:src="@mipmap/attention_close" />
+
+        <EditText
+            android:id="@+id/zhibo_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:drawableBottom="@drawable/red_shape"
+            android:gravity="center"
+            android:hint="给直播起个名字吧"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/openZhibo"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:text="开启直播" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/shareQQ"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/share_qq" />
+
+            <ImageView
+                android:id="@+id/shareWX"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/share_wechat" />
+
+            <ImageView
+                android:id="@+id/shareSINA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/share_sina" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

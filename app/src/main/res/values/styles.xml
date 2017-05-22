@@ -1,0 +1,118 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorTheme</item>
+        <item name="colorPrimaryDark">@color/colorTheme</item>
+        <item name="colorAccent">#ffffff</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="MineTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#ffffff</item>
+        <item name="colorPrimaryDark">#ffffff</item>
+        <item name="colorAccent">#ffffff</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="AppThemes" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorTheme</item>
+        <item name="colorPrimaryDark">@color/colorTheme</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/trs</item>
+    </style>
+    <!--Spaced line-->
+    <style name="MarginView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.1dip</item>
+        <item name="android:layout_marginLeft">8dip</item>
+        <item name="android:layout_marginRight">8dip</item>
+        <item name="android:background">@color/colorLine</item>
+    </style>
+    <!--line-->
+    <style name="View">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.1dip</item>
+        <item name="android:background">@color/colorLine</item>
+    </style>
+    <style name="mine_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">8dip</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginRight">8dip</item>
+        <item name="android:drawablePadding">10dip</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="mine_img_right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">8dip</item>
+        <item name="android:src">@mipmap/ui_advance</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="img_right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">8dip</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="mine_rl">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="my_dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="mine_cb">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">8dip</item>
+        <item name="android:background">@drawable/pink_cb_bg</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="main_menu_animstyle">
+        <!--进入效果-->
+        <item name="android:windowEnterAnimation">@anim/photo_dialog_in_anim</item>
+        <!--退出效果-->
+        <item name="android:windowExitAnimation">@anim/photo_dialog_out_anim</item>
+    </style>
+    <style name="main_button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textColor">@drawable/home_tab_text_bg</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:button">@color/transparent</item>
+    </style>
+    <style name="textview_wrap_content_fort14_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/fornt14</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+    <style name="cut_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/cut_line_height</item>
+        <item name="android:background">@color/cut_line_color</item>
+    </style>
+</resources>

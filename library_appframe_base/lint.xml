@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="CommitPrefEdits">
+        <ignore path="src/com/gdswww/library/util/PreferenceUtil.java" />
+    </issue>
+    <issue id="HandlerLeak">
+        <ignore path="src/com/gdswww/library/view/ViewPagerLoading.java" />
+        <ignore path="src/com/gdswww/library/view/ViewPagerLoadingURL.java" />
+    </issue>
+</lint>

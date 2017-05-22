@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gdswww.com.momo.view.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    app:dragEdge="right">
+
+    <FrameLayout
+        android:id="@+id/delete_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/colorTheme">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dip">
+
+            <ImageView
+                android:id="@+id/img_search_anchor_avatar"
+                android:layout_width="130dip"
+                android:layout_height="60dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:src="@mipmap/zhubo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:layout_toLeftOf="@+id/tv_whether_concern"
+                android:layout_toRightOf="@+id/img_search_anchor_avatar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_search_anchor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="唱歌跳舞我最强"
+                    android:textColor="@color/colorText"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_search_anchor_autograph"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="主播：小小小小美女"
+                    android:textColor="@color/colorGray666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="正在主播"
+                    android:textColor="@color/colorGray666666"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</gdswww.com.momo.view.SwipeRevealLayout>

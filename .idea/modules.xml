@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_appframe_base/library_appframe_base.iml" filepath="$PROJECT_DIR$/library_appframe_base/library_appframe_base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_pull_to_refresh_yigou/library_pull_to_refresh_yigou.iml" filepath="$PROJECT_DIR$/library_pull_to_refresh_yigou/library_pull_to_refresh_yigou.iml" />
+      <module fileurl="file://$PROJECT_DIR$/magicindicator/magicindicator.iml" filepath="$PROJECT_DIR$/magicindicator/magicindicator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/momo.iml" filepath="$PROJECT_DIR$/momo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zrcListView/zrcListView.iml" filepath="$PROJECT_DIR$/zrcListView/zrcListView.iml" />
+    </modules>
+  </component>
+</project>
