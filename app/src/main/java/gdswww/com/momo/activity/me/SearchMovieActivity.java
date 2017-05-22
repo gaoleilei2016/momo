@@ -1,55 +1,61 @@
 package gdswww.com.momo.activity.me;
 
-import android.os.Message;
+import java.util.ArrayList;
+import java.util.HashMap;
+
+import android.app.Activity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
 
-import com.gdswww.library.view.MyGridView;
-
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-
 import gdswww.com.momo.R;
-import gdswww.com.momo.base.MyBaseActivity;
 
-
-/**
- * 充值
- * Created by Administrator on 2017/5/10 0010.
- */
-public class RechargeActivity extends MyBaseActivity {
-    private MyGridView gv_recharge_moneys;
-    private List<String> list;
+public class SearchMovieActivity extends Activity {
+    private GridView gridViewType;
     private SimpleAdapter adater1;
     private ArrayList<HashMap<String, Object>> mList1;
-    private static final String listContent1[] = {"300", "580", "1880", "3000", "5800", "10800"};
-    private static final String listContent2[] = {"￥：30", "￥：58", "￥：188", "￥：300", "￥：580", "￥：1080"};
+    //	private static final int listContent1[] ={};
+//	private static final int listContent1[] = { R.string.search_type_all,
+//			R.string.search_type_love, R.string.search_type_biography,
+//			R.string.search_type_cartoon, R.string.search_type_action,
+//			R.string.search_type_ancient };
     private int typeLastItem = 0;
+    private static final String listContent1[] = {"300", "580", "1880", "3000", "5800", "10800"};
+    private static final String listContent2[] = {"￥:300", "￥:580", "￥:1880", "￥:3000", "￥:5800", "￥:10800"};
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        initMainUI();
+    }
+
+    private void initMainUI() {
+        setContentView(R.layout.activity_gridview);
+        initGridViewOne();
+    }
 
     private void initGridViewOne() {
-        gv_recharge_moneys = (MyGridView) findViewById(R.id.gv_recharge_moneys);
+        gridViewType = (GridView) findViewById(R.id.search_type);
         mList1 = new ArrayList<HashMap<String, Object>>();
         for (int i = 0; i < listContent1.length; i++) {
             HashMap<String, Object> map = new HashMap<String, Object>();
             map.put("radioIcon", R.drawable.border);
             map.put("radioText", listContent1[i]);
-            map.put("radioText1", listContent2[i]);
+            map.put("radioText", listContent2[i]);
             mList1.add(map);
         }
         adater1 = new SimpleAdapter(getApplicationContext(), mList1,
                 R.layout.activity_grid_item, new String[]{"radioIcon",
-                "radioText", "radioText1"}, new int[]{R.id.item_RadioImg,
+                "radioText", "radioText"}, new int[]{R.id.item_RadioImg,
                 R.id.item_RadioText, R.id.item_RadioText1});
-        if (gv_recharge_moneys != null) {
-            gv_recharge_moneys.setAdapter(adater1);
-            gv_recharge_moneys.requestFocus();
-            gv_recharge_moneys.setOnItemClickListener(new MyTypeOnItemClick());
+        if (gridViewType != null) {
+            gridViewType.setAdapter(adater1);
+            gridViewType.requestFocus();
+            gridViewType.setOnItemClickListener(new MyTypeOnItemClick());
         }
     }
 
@@ -64,7 +70,7 @@ public class RechargeActivity extends MyBaseActivity {
         sa.notifyDataSetChanged();
     }
 
-    private class MyTypeOnItemClick implements AdapterView.OnItemClickListener {
+    private class MyTypeOnItemClick implements OnItemClickListener {
 
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position,
@@ -79,31 +85,10 @@ public class RechargeActivity extends MyBaseActivity {
             changeItemImg(adater1, position, true);
             HashMap<String, Object> map = (HashMap<String, Object>) adater1
                     .getItem(position);
-            String typeStr = (String) map.get("radioText1");
+            String typeStr = (String) map.get("radioText");
             Toast.makeText(getApplicationContext(), typeStr, Toast.LENGTH_SHORT).show();
             System.out.println("Type string:" + typeStr);
         }
-    }
-
-    @Override
-    public void updateUI(Message msg) {
-
-    }
-
-    @Override
-    public void initUI() {
-        setMyTitle("充值");
-        initGridViewOne();
-    }
-
-    @Override
-    public void regUIEvent() {
-
-    }
-
-    @Override
-    public int getLayout() {
-        return R.layout.activity_recharge;
     }
 
 }

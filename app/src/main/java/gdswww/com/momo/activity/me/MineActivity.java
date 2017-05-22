@@ -36,7 +36,7 @@ import gdswww.com.momo.utils.ActivitySelectPhoto;
  */
 
 public class MineActivity extends MyBaseActivity implements View.OnClickListener {
-    private RelativeLayout re_about_us, rl_set_up, rl_mine_message;
+    private RelativeLayout re_about_us, rl_set_up, rl_mine_message,kanduo;
     private TextView tv_mine_recharge, ed_open;
     private CircleImageView img_search_anchor_avatar;
     private static final int PHOTO_REQUEST_CAREMA = 1;// 拍照
@@ -49,7 +49,7 @@ public class MineActivity extends MyBaseActivity implements View.OnClickListener
     public void updateUI(Message msg) {
 
     }
-
+    TextView openGuanzhu,openGuanzhu1;
     @Override
     public void initUI() {
         findid();
@@ -62,6 +62,9 @@ public class MineActivity extends MyBaseActivity implements View.OnClickListener
         rl_mine_message = viewId(R.id.rl_mine_message);
         tv_mine_recharge = viewId(R.id.tv_mine_recharge);
         img_search_anchor_avatar = viewId(R.id.img_search_anchor_avatar);
+        kanduo=viewId(R.id.kanduo);
+        openGuanzhu=viewId(R.id.openGuanzhu);
+        openGuanzhu1=viewId(R.id.openGuanzhu1);
     }
 
     /*
@@ -84,7 +87,9 @@ public class MineActivity extends MyBaseActivity implements View.OnClickListener
         rl_mine_message.setOnClickListener(this);
         tv_mine_recharge.setOnClickListener(this);
         img_search_anchor_avatar.setOnClickListener(this);
-
+        kanduo.setOnClickListener(this);
+        openGuanzhu.setOnClickListener(this);
+        openGuanzhu1.setOnClickListener(this);
     }
 
     /*
@@ -138,7 +143,9 @@ public class MineActivity extends MyBaseActivity implements View.OnClickListener
             return false;
         }
     }
-
+    public void openGuanzhu(View view){
+        goActivity(GuanZhuActivity.class);
+    }
     @Override
     public int getLayout() {
         return R.layout.activity_mine;
@@ -194,6 +201,14 @@ public class MineActivity extends MyBaseActivity implements View.OnClickListener
                     }
                 });
                 break;
+            case R.id.kanduo:
+                goActivity(ListViewDeleteItemActivity.class);
+                break;
+            case R.id.openGuanzhu:
+            case R.id.openGuanzhu1:
+                goActivity(GuanZhuActivity.class);
+                break;
+
         }
     }
 
@@ -217,7 +232,7 @@ public class MineActivity extends MyBaseActivity implements View.OnClickListener
             if (hasSdcard()) {
                 crop(Uri.fromFile(tempFile));
             } else {
-                Toast.makeText(MineActivity.this, "未找到存储卡，无法存储照片！", 0).show();
+                Toast.makeText(MineActivity.this, "未找到存储卡，无法存储照片！", Toast.LENGTH_LONG).show();
             }
 
         } else if (requestCode == PHOTO_REQUEST_CUT) {

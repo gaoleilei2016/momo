@@ -1,10 +1,15 @@
-package gdswww.com.momo.activity.home;
+package gdswww.com.momo.activity.me;
 
 import android.os.Message;
 
 import gdswww.com.momo.R;
 import gdswww.com.momo.base.MyBaseActivity;
-public class AnchorDetailsActivity extends MyBaseActivity {
+
+/**
+ * Created by Administrator on 2017/5/22 0022.
+ */
+
+public class ZhuBoDetailsActivity extends MyBaseActivity {
     @Override
     public void updateUI(Message msg) {
 
@@ -12,7 +17,7 @@ public class AnchorDetailsActivity extends MyBaseActivity {
 
     @Override
     public void initUI() {
-        setMyTitle("");
+
     }
 
     @Override
@@ -22,6 +27,6 @@ public class AnchorDetailsActivity extends MyBaseActivity {
 
     @Override
     public int getLayout() {
-        return R.layout.activity_anchor_details;
+        return R.layout.zhuboinfo;
     }
 }

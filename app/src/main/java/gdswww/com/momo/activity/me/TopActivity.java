@@ -7,10 +7,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.widget.LinearLayout;
-
-import com.handmark.pulltorefresh.library.PullToRefreshBase;
-import com.handmark.pulltorefresh.library.PullToRefreshListView;
-
 import net.lucode.hackware.magicindicator.MagicIndicator;
 import net.lucode.hackware.magicindicator.ViewPagerHelper;
 import net.lucode.hackware.magicindicator.buildins.UIUtil;
@@ -24,18 +20,12 @@ import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.Simple
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
-
 import gdswww.com.momo.R;
 import gdswww.com.momo.adapter.ExamplePagerAdapter;
 import gdswww.com.momo.adapter.MyFragmentPagerAdapter;
-import gdswww.com.momo.adapter.TopAdapter;
 import gdswww.com.momo.base.MyBaseActivity;
-import gdswww.com.momo.fragment.GuanzhuFragment;
-import gdswww.com.momo.fragment.RemenFragment;
 import gdswww.com.momo.fragment.TopFragment;
-import gdswww.com.momo.fragment.ZuixinFragment;
 
 /**
  * 排行榜
@@ -46,7 +36,7 @@ public class TopActivity extends MyBaseActivity {
     private List<String> mDataList = Arrays.asList(CHANNELS);
     private ExamplePagerAdapter mExamplePagerAdapter = new ExamplePagerAdapter(mDataList);
     private ViewPager mViewPager;
-    List<Fragment> fragmentList = new ArrayList<>();
+    ArrayList<Fragment> fragmentList = new ArrayList<Fragment>();
 
     @Override
     public void updateUI(Message msg) {
