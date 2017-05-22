@@ -41,7 +41,7 @@ public class TabIndexActivity extends MyBaseActivity {
     private static final String[] CHANNELS = new String[]{"关注", "热门", "最新"};
     private List<String> mDataList = Arrays.asList(CHANNELS);
     private ViewPager mViewPager;
-    List<Fragment> fragmentList = new ArrayList<>();
+    ArrayList<Fragment> fragmentList = new ArrayList<>();
 
     @Override
     public void updateUI(Message msg) {

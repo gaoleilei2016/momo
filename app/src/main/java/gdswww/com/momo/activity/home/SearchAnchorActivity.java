@@ -1,9 +1,13 @@
 package gdswww.com.momo.activity.home;
 
 import android.os.Message;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
+import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
 
 import java.util.ArrayList;
@@ -16,24 +20,30 @@ import gdswww.com.momo.base.MyBaseActivity;
 /**
  * Created by Administrator on 2017/5/11 0011.
  */
-public class SearchAnchorActivity extends MyBaseActivity {
+public class SearchAnchorActivity extends MyBaseActivity implements TextWatcher {
     private PullToRefreshListView lv_search_anchor;
     private SearchAnchorAdapter searchAnchorAdapter;
     private ArrayList<HashMap<String, String>> list;
-    private TextView no_data,tv_remeng;
-
+    private TextView no_data, tv_remeng;
+    EditText search_zhubo;
 
     @Override
     public void updateUI(Message msg) {
 
     }
 
+    public void closeActivity(View view) {
+        finish();
+    }
+
     @Override
     public void initUI() {
-        no_data=viewId(R.id.no_data);
-        tv_remeng=viewId(R.id.tv_remeng);
+        no_data = viewId(R.id.no_data);
+        tv_remeng = viewId(R.id.tv_remeng);
         tv_remeng.setVisibility(View.GONE);
         lv_search_anchor = viewId(R.id.lv_search_anchor);
+        lv_search_anchor.setMode(PullToRefreshBase.Mode.BOTH);
+        search_zhubo = viewId(R.id.search_zhubo);
         lv_search_anchor.setVisibility(View.GONE);
         list = new ArrayList<>();
         searchAnchorAdapter = new SearchAnchorAdapter(SearchAnchorActivity.this, list);
@@ -53,6 +63,7 @@ public class SearchAnchorActivity extends MyBaseActivity {
 
     @Override
     public void regUIEvent() {
+        search_zhubo.addTextChangedListener(this);
 //        lv_search_anchor.setOnRefreshStartListener(new ZrcListView.OnStartListener() {
 //            @Override
 //            public void onStart() {
@@ -95,5 +106,27 @@ public class SearchAnchorActivity extends MyBaseActivity {
     @Override
     public int getLayout() {
         return R.layout.serachzhubo;
+    }
+
+    @Override
+    public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+//        toastShort(charSequence.toString());
+
+    }
+
+    @Override
+    public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+        toastShort(charSequence.toString());
+        no_data.setVisibility(View.GONE);
+        tv_remeng.setVisibility(View.VISIBLE);
+        lv_search_anchor.setVisibility(View.VISIBLE);
+        //TODO
+
+
+    }
+
+    @Override
+    public void afterTextChanged(Editable editable) {
+
     }
 }
