@@ -3,9 +3,11 @@ package gdswww.com.momo.base;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.gdswww.library.activity.GDSSwipeBackActivity;
+import com.squareup.picasso.Picasso;
 
 import gdswww.com.momo.R;
 import gdswww.com.momo.utils.PreferenceUtil;
@@ -15,6 +17,14 @@ public abstract class MyBaseActivity extends GDSSwipeBackActivity {
 
     public void setSaveData(String key, String value) {
         PreferenceUtil.setStringValue(context, key, value);
+    }
+
+    public void loadImg(ImageView imageView, int object) {
+        Picasso.with(context).load(object).into(imageView);
+    }
+
+    public void loadImg(ImageView imageView, String object) {
+        Picasso.with(context).load(object).into(imageView);
     }
 
     public String getSaveData(String key) {

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/title"></include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/inputborder">
+
+        <ImageView
+            android:id="@+id/zhanghao"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/zhanghao" />
+
+        <gdswww.com.momo.base.CleanableEditText
+            android:id="@+id/ed_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/zhanghao"
+            android:background="@null"
+            android:drawableRight="@mipmap/signup_cancel_s"
+            android:hint="请输入常用手机号"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:padding="5dp"
+            android:textSize="@dimen/fornt14" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/inputborder">
+
+        <ImageView
+            android:id="@+id/mima"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/mima" />
+
+        <gdswww.com.momo.base.CleanableEditText
+            android:id="@+id/ed_tv_reg_getcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/mima"
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:inputType="textPassword"
+            android:maxLength="11"
+            android:padding="5dp"
+            android:textSize="@dimen/fornt14" />
+
+        <TextView
+            android:id="@+id/tv_reg_getcode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/code_shape"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="获取验证码"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/inputborder">
+
+        <ImageView
+            android:id="@+id/rmima"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/mima" />
+
+        <gdswww.com.momo.base.CleanableEditText
+            android:id="@+id/ed_repass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/rmima"
+            android:background="@null"
+            android:drawableRight="@mipmap/signup_cancel_s"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:maxLength="11"
+            android:padding="5dp"
+            android:textSize="@dimen/fornt14" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/inputborder">
+
+        <ImageView
+            android:id="@+id/remima"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/mima" />
+
+        <gdswww.com.momo.base.CleanableEditText
+            android:id="@+id/ed_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/remima"
+            android:background="@null"
+            android:drawableRight="@mipmap/signup_cancel_s"
+            android:hint="请再次输入密码"
+            android:inputType="textPassword"
+            android:maxLength="11"
+            android:padding="5dp"
+            android:textSize="@dimen/fornt14" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/gree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:text="点击注册表示同意《喵喵直播注册协议》" />
+
+    <com.gdswww.library.view.FilterButton
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorTheme"
+        android:onClick="login"
+        android:text="立即注册"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</LinearLayout>
+    </ScrollView>

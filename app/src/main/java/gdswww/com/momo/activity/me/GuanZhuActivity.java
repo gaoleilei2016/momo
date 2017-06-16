@@ -15,6 +15,7 @@ import gdswww.com.momo.adapter.ViewHolder;
 import gdswww.com.momo.base.MyBaseActivity;
 
 /**
+ *我关注
  * Created by Administrator on 2017/5/22 0022.
  */
 

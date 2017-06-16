@@ -33,7 +33,7 @@ public class DebugInterface {
                 }
                 AppContext.LogInfo("url----->" + url, object + "");
                 if (object != null) {
-                    if ("1".equals(object.optString("result"))) {
+                    if ("1".equals(object.optString("code"))) {
                         callback.onSuccess(object);
 
                     } else {
@@ -57,7 +57,7 @@ public class DebugInterface {
                 }
                 AppContext.LogInfo("url----->" + url, object + "");
                 if (object != null) {
-                    if ("1".equals(object.optString("result"))) {
+                    if ("1".equals(object.optString("code"))) {
                         callback.onSuccess(object);
 
                     } else {

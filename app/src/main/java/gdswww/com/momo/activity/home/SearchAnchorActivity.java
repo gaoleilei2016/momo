@@ -1,26 +1,25 @@
 package gdswww.com.momo.activity.home;
 
+import android.content.Intent;
 import android.os.Message;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.TextView;
-
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
-
 import java.util.ArrayList;
 import java.util.HashMap;
-
 import gdswww.com.momo.R;
+import gdswww.com.momo.activity.me.ZhiBoActivity;
 import gdswww.com.momo.adapter.SearchAnchorAdapter;
 import gdswww.com.momo.base.MyBaseActivity;
-
 /**
  * Created by Administrator on 2017/5/11 0011.
  */
-public class SearchAnchorActivity extends MyBaseActivity implements TextWatcher {
+public class SearchAnchorActivity extends MyBaseActivity implements TextWatcher, AdapterView.OnItemClickListener {
     private PullToRefreshListView lv_search_anchor;
     private SearchAnchorAdapter searchAnchorAdapter;
     private ArrayList<HashMap<String, String>> list;
@@ -28,7 +27,8 @@ public class SearchAnchorActivity extends MyBaseActivity implements TextWatcher 
     EditText search_zhubo;
 
     @Override
-    public void updateUI(Message msg) {
+    public void updateUI(Message msg)
+    {
 
     }
 
@@ -48,7 +48,7 @@ public class SearchAnchorActivity extends MyBaseActivity implements TextWatcher 
         list = new ArrayList<>();
         searchAnchorAdapter = new SearchAnchorAdapter(SearchAnchorActivity.this, list);
         lv_search_anchor.setAdapter(searchAnchorAdapter);
-
+        lv_search_anchor.setOnItemClickListener(this);
 //        // 设置下拉刷新的样式（可选，但如果没有Header则无法下拉刷新）
 //        SimpleHeader header = new SimpleHeader(this);
 //        header.setTextColor(0xffE23B69);
@@ -121,12 +121,17 @@ public class SearchAnchorActivity extends MyBaseActivity implements TextWatcher 
         tv_remeng.setVisibility(View.VISIBLE);
         lv_search_anchor.setVisibility(View.VISIBLE);
         //TODO
-
-
     }
 
     @Override
     public void afterTextChanged(Editable editable) {
 
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+        Intent intent = new Intent(this, ZhiBoActivity.class);
+        intent.putExtra("zhubo_id", l);
+        startActivity(intent);
     }
 }

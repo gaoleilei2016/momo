@@ -13,4 +13,8 @@ public interface CallBackJSON {
     interface DiologCallBack {
         public void getString(String str);
     }
+
+    interface CallBack {
+        public void callback(String str);
+    }
 }

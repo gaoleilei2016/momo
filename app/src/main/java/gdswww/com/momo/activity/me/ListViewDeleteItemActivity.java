@@ -11,6 +11,7 @@ import gdswww.com.momo.adapter.ListAdapter;
 import gdswww.com.momo.base.MyBaseActivity;
 
 /**
+ * 我看过的
  * listview滑动删除
  */
 public class ListViewDeleteItemActivity extends MyBaseActivity {

@@ -2,6 +2,7 @@ package gdswww.com.momo.base;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.view.View;
 
@@ -39,6 +40,7 @@ public abstract class MyBaseFragment extends BaseFragment {
     protected void goActivityFromFragment(Class<? extends Activity> cls) {
         getActivity().startActivity(new Intent(getActivity(), cls));
     }
+
 
     protected void goActivityFinishFromFragment(Class<? extends Activity> cls) {
         getActivity().startActivity(new Intent(getActivity(), cls));

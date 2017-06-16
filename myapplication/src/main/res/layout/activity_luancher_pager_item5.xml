@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/home_dh_dzt_1"
+    android:paddingTop="180dp"
+    android:orientation="vertical" >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/home_dh_dzt_2" />
+
+    <ImageView
+        android:id="@+id/tanzhutai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/home_dh_dzt_4" />
+</FrameLayout>

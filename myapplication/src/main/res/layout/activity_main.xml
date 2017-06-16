@@ -1,0 +1,180 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="true"
+            android:fitsSystemWindows="true">
+
+            <!-- The main content view -->
+            <android.support.v4.view.ViewPager
+                android:id="@+id/content_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_normal">
+
+            </android.support.v4.view.ViewPager>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="60dp"
+            android:src="@mipmap/icon_home_drawer" />
+
+        <LinearLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/btn_home_rw"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/btn_home_chj"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/btn_home_zxyh"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:weightSum="3">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/btn_home_rw" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/btn_home_chj" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/btn_home_zxyh" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/index"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            android:weightSum="3">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="120dp"
+                android:layout_marginRight="30dp"
+                android:src="@mipmap/zuqiu" />
+
+            <ImageView
+                android:id="@+id/zhuqiu"
+                android:layout_width="50dp"
+                android:layout_height="120dp"
+                android:layout_marginRight="30dp"
+                android:src="@mipmap/zuqiu" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="120dp"
+                android:src="@mipmap/zuqiu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="每日签到"
+                android:textColor="@color/white_normal" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="全新改版"
+                android:textColor="@color/white_normal" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="喜中大奖"
+                android:textColor="@color/white_normal" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="恭喜南京市在《全明星大赛》中获奖1000，恭喜苏州在《好运扑克》大奖中获奖1000，本周是暂停服务3-4点。。。"
+            android:textColor="@android:color/holo_orange_light" />
+    </RelativeLayout>
+    <!-- The navigation view -->
+    <FrameLayout
+        android:id="@+id/left_drawer"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end">
+        <!--   左侧菜单 -->
+        <include layout="@layout/layout_main_left" />
+    </FrameLayout>
+
+</android.support.v4.widget.DrawerLayout>

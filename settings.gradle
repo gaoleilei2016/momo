@@ -1,4 +1,4 @@
-include ':app', ':library_appframe_base'
+include ':app', ':library_appframe_base', ':myapplication'
 include ':library_pull_to_refresh_yigou'
 include ':magicindicator'
 include ':zrcListView'

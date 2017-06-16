@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tv_apply_sign_up" type="id" />
+    <item name="ib_activity_title_back" type="id" />
+    <item name="tv_activity_title" type="id" />
+    <item name="iv_activity_title_right" type="id" />
+    <item name="tv_activity_title_right" type="id" />
+    <item name="tv_activity_title_left" type="id" />
+    <item name="gv_img" type="id" />
+    <item name="swipeToLoadLayout" type="id" />
+    <item name="swipe_target" type="id" />
+    <item name="swipe_refresh_header" type="id" />
+    <item name="swipe_load_more_footer" type="id" />
+    <item name="cet_activity_search" type="id" />
+    <item name="iv_activity_title_right_star" type="id" />
+</resources>

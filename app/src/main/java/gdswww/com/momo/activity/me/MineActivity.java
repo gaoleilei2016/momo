@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Message;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -20,6 +21,7 @@ import com.mylhyl.acp.AcpListener;
 import com.mylhyl.acp.AcpOptions;
 import com.shz.photosel.multiimagechooser.GetImageDialog;
 import com.shz.photosel.multiimagechooser.MainActivity;
+import com.squareup.picasso.Picasso;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -44,7 +46,6 @@ public class MineActivity extends MyBaseActivity implements View.OnClickListener
     private static final int PHOTO_REQUEST_CUT = 3;// 结果
     /* 头像名称 */private static final String PHOTO_FILE_NAME = "temp_photo.jpg";
     private File tempFile;
-
     @Override
     public void updateUI(Message msg) {
 
@@ -53,6 +54,18 @@ public class MineActivity extends MyBaseActivity implements View.OnClickListener
     @Override
     public void initUI() {
         findid();
+        initDataFromBD();
+    }
+
+    private void initDataFromBD() {
+        ((TextView)viewId(R.id.name)).setText(getSaveData("nick")+" ");
+        if(getSaveData("sex").equals("1"))
+        ((ImageView)viewId(R.id.sex)).setImageResource(R.mipmap.nan);
+        ((ImageView)viewId(R.id.sex)).setImageResource(R.mipmap.nv);
+        Picasso.with(getApplicationContext())
+                .load(getSaveData("avatar"))
+                .into(img_search_anchor_avatar);
+        Log.e("MsgMain+图片：",getSaveData("avatar"));
     }
 
     private void findid() {
@@ -178,28 +191,29 @@ public class MineActivity extends MyBaseActivity implements View.OnClickListener
                 startActivity(intent);
                 break;
             case R.id.img_search_anchor_avatar://打开本地图库
-                Acp.getInstance(this).request(new AcpOptions.Builder().setPermissions(Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE).build(), new AcpListener() {
-                    @Override
-                    public void onGranted() {
-                        getImageDialog = new GetImageDialog(MineActivity.this, new GetImageDialog.GetImageCallback() {
-                            @Override
-                            public void onTakePhoto() {
-                                camera();
-                            }
-
-                            @Override
-                            public void onGetPhoto() {
-                                gallery();
-                            }
-                        });
-                        getImageDialog.show();
-                    }
-
-                    @Override
-                    public void onDenied(List<String> permissions) {
-                        toastShort("权限拒绝");
-                    }
-                });
+                startActivity(new Intent(this,LoginActivity.class));
+//                Acp.getInstance(this).request(new AcpOptions.Builder().setPermissions(Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE).build(), new AcpListener() {
+//                    @Override
+//                    public void onGranted() {
+//                        getImageDialog = new GetImageDialog(MineActivity.this, new GetImageDialog.GetImageCallback() {
+//                            @Override
+//                            public void onTakePhoto() {
+//                                camera();
+//                            }
+//
+//                            @Override
+//                            public void onGetPhoto() {
+//                                gallery();
+//                            }
+//                        });
+//                        getImageDialog.show();
+//                    }
+//
+//                    @Override
+//                    public void onDenied(List<String> permissions) {
+//                        toastShort("权限拒绝");
+//                    }
+//                });
                 break;
             case R.id.kanduo:
                 goActivity(ListViewDeleteItemActivity.class);

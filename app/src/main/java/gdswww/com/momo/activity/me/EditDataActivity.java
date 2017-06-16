@@ -10,21 +10,30 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.gdswww.library.dialog.AppProgressDialog;
 import com.gdswww.library.view.CircleImageView;
 import com.mylhyl.acp.Acp;
 import com.mylhyl.acp.AcpListener;
 import com.mylhyl.acp.AcpOptions;
 import com.shz.photosel.multiimagechooser.GetImageDialog;
+import com.squareup.picasso.Picasso;
+
 import org.json.JSONObject;
+
+import java.io.BufferedOutputStream;
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
+
 import gdswww.com.momo.Interface.CallBackJSON;
 import gdswww.com.momo.R;
 import gdswww.com.momo.base.DebugInterface;
 import gdswww.com.momo.base.MyBaseActivity;
 import gdswww.com.momo.dialog.*;
+import gdswww.com.momo.utils.FileUtils;
 
 /**
  * 编辑界面
@@ -47,70 +56,14 @@ public class EditDataActivity extends MyBaseActivity {
 
     }
 
-    /*
-        * 从相册获取
-        */
-    public void gallery() {
-        // 激活系统图库，选择一张图片
-        Intent intent = new Intent(Intent.ACTION_PICK);
-        intent.setType("image/*");
-        // 开启一个带有返回值的Activity，请求码为PHOTO_REQUEST_GALLERY
-        startActivityForResult(intent, PHOTO_REQUEST_GALLERY);
-    }
-
-    /*
-     * 从相机获取
-     */
-    public void camera() {
-        // 激活相机
-        Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
-        // 判断存储卡是否可以用，可用进行存储
-        if (hasSdcard()) {
-            tempFile = new File(Environment.getExternalStorageDirectory(),
-                    PHOTO_FILE_NAME);
-            // 从文件中创建uri
-            Uri uri = Uri.fromFile(tempFile);
-            intent.putExtra(MediaStore.EXTRA_OUTPUT, uri);
-        }
-        // 开启一个带有返回值的Activity，请求码为PHOTO_REQUEST_CAREMA
-        startActivityForResult(intent, PHOTO_REQUEST_CAREMA);
-    }
-
-    /*
-     * 剪切图片
-     */
-    private void crop(Uri uri) {
-        // 裁剪图片意图
-        Intent intent = new Intent("com.android.camera.action.CROP");
-        intent.setDataAndType(uri, "image/*");
-        intent.putExtra("crop", "true");
-        // 裁剪框的比例，1：1
-        intent.putExtra("aspectX", 1);
-        intent.putExtra("aspectY", 1);
-        // 裁剪后输出图片的尺寸大小
-        intent.putExtra("outputX", 250);
-        intent.putExtra("outputY", 250);
-
-        intent.putExtra("outputFormat", "JPEG");// 图片格式
-        intent.putExtra("noFaceDetection", true);// 取消人脸识别
-        intent.putExtra("return-data", true);
-        // 开启一个带有返回值的Activity，请求码为PHOTO_REQUEST_CUT
-        startActivityForResult(intent, PHOTO_REQUEST_CUT);
-    }
-
-    /*
-     * 判断sdcard是否被挂载
-     */
-    private boolean hasSdcard() {
-        if (Environment.getExternalStorageState().equals(
-                Environment.MEDIA_MOUNTED)) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
     GetImageDialog getImageDialog;
+
+    public void getDataFromBD() {
+        tv_nickname.setText(getSaveData("nick"));
+        tv_tv_sex.setText(getSaveData("sex"));
+        tv_address.setText(getSaveData("address"));
+        Picasso.with(getApplicationContext()).load(getSaveData("avatar")).into(head_img);
+    }
 
     @Override
     public void initUI() {
@@ -119,6 +72,7 @@ public class EditDataActivity extends MyBaseActivity {
         tv_tv_sex = viewId(R.id.tv_tv_sex);
         tv_address = viewId(R.id.tv_address);
         head_img = viewId(R.id.head_img);
+        getDataFromBD();
         showRight("保存", new View.OnClickListener() {//修改资料上传数据
             @Override
             public void onClick(View v) {
@@ -186,7 +140,7 @@ public class EditDataActivity extends MyBaseActivity {
         });
 
     }
-
+    File headFile;
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == PHOTO_REQUEST_GALLERY) {
@@ -210,27 +164,51 @@ public class EditDataActivity extends MyBaseActivity {
             if (data != null) {
                 Bitmap bitmap = data.getParcelableExtra("data");
                 this.head_img.setImageBitmap(bitmap);
+                try {
+                    headFile= saveFile(bitmap,Environment.getExternalStorageDirectory().getPath(),"headimg.jpg");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
-            try {
-                // 将临时文件删除
-                if(tempFile!=null)
-                tempFile.delete();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+//            try {
+//                // 将临时文件删除
+//                if (tempFile != null)
+//                    tempFile.delete();
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//            }
 
         }
 
         super.onActivityResult(requestCode, resultCode, data);
     }
-
+    /**
+     * 将Bitmap转换成文件
+     * 保存文件
+     * @param bm
+     * @param fileName
+     * @throws IOException
+     */
+    public  File saveFile(Bitmap bm,String path, String fileName) throws IOException {
+        File dirFile = new File(path);
+        if(!dirFile.exists()){
+            dirFile.mkdir();
+        }
+        File myCaptureFile = new File(path , fileName);
+        BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(myCaptureFile));
+        bm.compress(Bitmap.CompressFormat.JPEG, 80, bos);
+        bos.flush();
+        bos.close();
+        return myCaptureFile;
+    }
     private void requestHttp() {
         http = new DebugInterface(aq, this);
         HashMap<String, Object> parames = new HashMap<>();
-        parames.put("","");
-        parames.put("","");
-        parames.put("","");
-        parames.put("","");
+        parames.put("token", getSaveData("token"));
+        parames.put("nick", tv_nickname.getText().toString());
+        parames.put("sex", tv_tv_sex.getText().toString());
+        parames.put("address", tv_address.getText().toString());
+        parames.put("avatar", FileUtils.getFileByPath("/storage/emulated/0/headimg.jpg"));
         http.getBackstageData(parames, (AppProgressDialog) getProgessDialog("正在保存...", true), "", new CallBackJSON() {
             @Override
             public void onSuccess(JSONObject jsonObject) {
@@ -253,5 +231,68 @@ public class EditDataActivity extends MyBaseActivity {
     @Override
     public int getLayout() {
         return R.layout.activity_edit_data;
+    }
+
+    /*
+     * 从相册获取
+     */
+    public void gallery() {
+        // 激活系统图库，选择一张图片
+        Intent intent = new Intent(Intent.ACTION_PICK);
+        intent.setType("image/*");
+        // 开启一个带有返回值的Activity，请求码为PHOTO_REQUEST_GALLERY
+        startActivityForResult(intent, PHOTO_REQUEST_GALLERY);
+    }
+
+    /*
+     * 从相机获取
+     */
+    public void camera() {
+        // 激活相机
+        Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
+        // 判断存储卡是否可以用，可用进行存储
+        if (hasSdcard()) {
+            tempFile = new File(Environment.getExternalStorageDirectory(),
+                    PHOTO_FILE_NAME);
+            // 从文件中创建uri
+            Uri uri = Uri.fromFile(tempFile);
+            intent.putExtra(MediaStore.EXTRA_OUTPUT, uri);
+        }
+        // 开启一个带有返回值的Activity，请求码为PHOTO_REQUEST_CAREMA
+        startActivityForResult(intent, PHOTO_REQUEST_CAREMA);
+    }
+
+    /*
+     * 剪切图片
+     */
+    private void crop(Uri uri) {
+        // 裁剪图片意图
+        Intent intent = new Intent("com.android.camera.action.CROP");
+        intent.setDataAndType(uri, "image/*");
+        intent.putExtra("crop", "true");
+        // 裁剪框的比例，1：1
+        intent.putExtra("aspectX", 1);
+        intent.putExtra("aspectY", 1);
+        // 裁剪后输出图片的尺寸大小
+        intent.putExtra("outputX", 250);
+        intent.putExtra("outputY", 250);
+
+        intent.putExtra("outputFormat", "JPEG");// 图片格式
+        intent.putExtra("noFaceDetection", true);// 取消人脸识别
+        intent.putExtra("return-data", true);
+        // 开启一个带有返回值的Activity，请求码为PHOTO_REQUEST_CUT
+        startActivityForResult(intent, PHOTO_REQUEST_CUT);
+    }
+
+    /*
+     * 判断sdcard是否被挂载
+     */
+    private boolean hasSdcard() {
+        if (Environment.getExternalStorageState().equals(
+                Environment.MEDIA_MOUNTED)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
